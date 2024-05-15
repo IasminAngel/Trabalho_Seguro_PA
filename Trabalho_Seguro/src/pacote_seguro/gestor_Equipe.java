@@ -12,7 +12,8 @@ import java.awt.event.ActionListener;
 
 public class gestor_Equipe {
 	public void opcoes_Gestor_Equipe (int escolha, Component frame) {
-				
+	// Recomendo que executem o codigo, lembrem de converter para Maven! 			
+	// Daqui pra frente segue o mesmo esquema que o outro, as diferencas eu aplico aqui
 		if(escolha == JOptionPane.NO_OPTION) {
       	   Object[] escolhaGestor1 = {"Verificar perfil", "Outra opção"};
       	   int escolha1 = JOptionPane.showOptionDialog(frame,
@@ -40,7 +41,8 @@ public class gestor_Equipe {
       			   
       			  if(escolha2 == JOptionPane.YES_OPTION) {
       				JOptionPane.showMessageDialog(frame,"Informe o Incidente");
-      				
+				  
+      				// nesse codigo abaixo por inteiro, faz a janela de selecao de informacoes na caixa de mensagem, tem as determinacoes de tamanho dado em aula
       				JFrame local = new JFrame ("Incidente:");
   					local.setSize(400,300); // Definir o tamanho da janela
   					local.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Fechar quando a janela for fechada
