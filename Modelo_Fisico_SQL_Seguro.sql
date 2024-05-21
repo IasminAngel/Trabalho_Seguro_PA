@@ -168,7 +168,8 @@ INSERT INTO `Trabalho_Seguro_SQL`.`Cargo` (`idCargo`, `nome`, `funcao`) VALUES (
 
 INSERT INTO `Trabalho_Seguro_SQL`.`tem` (`Epi_idEpi`, `Cargo_idCargo`, `Funcionario_Matricula`) VALUES ('1', '1', '1');
 
-INSERT INTO  `Trabalho_Seguro_SQL`.`Funcionario` (`Matricula`, `Nome`, `Sobrenome`, `Dtnascimento`, `senha`, `Formacao`, `CPF`, `numero`, `DDD`, `Bairro`, `Logradouro`, `Cidade`, `Telefone_Emergencial`, `Cargo_idCargo`,`cargo`) VALUES ('2', 'Benedito','Silva', '1980-9-12', '123456', 'Analista de Dados', '912.242.134-90','993245422','71','Pituba','Rua dos Sentimentos 70','Salvador','(71)984343225','1','GESTOR DE EQUIPE');
+INSERT INTO  `Trabalho_Seguro_SQL`.`Funcionario` (`Matricula`, `Nome`, `Sobrenome`, `Dtnascimento`, `senha`, `Formacao`, `CPF`, `numero`, `DDD`, `Bairro`, `Logradouro`, `Cidade`, `Telefone_Emergencial`, `Cargo_idCargo`,`cargo`) VALUES ('24232', 'Benedito','Silva', '1980-9-12', '123456', 'Analista de Dados', '912.242.134-90','993245422','71','Pituba','Rua dos Sentimentos 70','Salvador','(71)984343225','1','GESTOR DE EQUIPE');
+INSERT INTO `trabalho_seguro_sql`.`funcionario` (`Matricula`, `Nome`, `Sobrenome`, `Dtnascimento`, `senha`, `Formacao`, `CPF`, `numero`, `DDD`, `Bairro`, `Logradouro`, `Cidade`, `Telefone_Emergencial`, `Cargo_idCargo`, `cargo`) VALUES ('31234', 'Talita', 'Matos', '1970-01-10', 'trabalho123', 'Desenvolvedor Web', '812.345.143-31', '99123651', '71', 'Valéria', 'Parque do tiro perdido 12', 'Salvador', '(71)991242312', '1', 'COLABORADOR');
 
 UPDATE `Trabalho_Seguro_SQL`.`Cargo` SET `nome` = 'Funcionário' WHERE (`idCargo` = '1');
 INSERT INTO `Trabalho_Seguro_SQL`.`Cargo` (`idCargo`, `nome`, `funcao`) VALUES ('2', 'Gestor de Equipe', 'Coodernar Ala 1');
