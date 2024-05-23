@@ -43,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `Trabalho_Seguro_SQL`.`Funcionario` (
   `Cidade` VARCHAR(45) NULL,
   `Telefone_Emergencial` VARCHAR(45) NULL,
   `Cargo_idCargo` INT UNSIGNED NOT NULL,
+  `cargo` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Matricula`),
   INDEX `fk_Funcionario_Cargo1_idx` (`Cargo_idCargo`),
   CONSTRAINT `fk_Funcionario_Cargo1`
@@ -157,11 +158,6 @@ CREATE TABLE IF NOT EXISTS `Trabalho_Seguro_SQL`.`afeta` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-ALTER TABLE funcionario
-DROP COLUMN nome_cargo;
-
-
-
 INSERT INTO `Trabalho_Seguro_SQL`.`Epi` (`idEpi`, `nome`, `funcao`) VALUES ('1', 'Capacete', 'Proteger a  cabeça');
 
 INSERT INTO `Trabalho_Seguro_SQL`.`Cargo` (`idCargo`, `nome`, `funcao`) VALUES ('1', 'Administradora ', 'Verificar Estoques');
@@ -175,20 +171,12 @@ UPDATE `Trabalho_Seguro_SQL`.`Cargo` SET `nome` = 'Funcionário' WHERE (`idCargo
 INSERT INTO `Trabalho_Seguro_SQL`.`Cargo` (`idCargo`, `nome`, `funcao`) VALUES ('2', 'Gestor de Equipe', 'Coodernar Ala 1');
 
 SELECT * FROM `Trabalho_Seguro_SQL`.`Epi`;
-
 SELECT * FROM `Trabalho_Seguro_SQL`.`Funcionario`;
-
 SELECT * FROM `Trabalho_Seguro_SQL`.`Cargo`;
-
 SELECT * FROM `Trabalho_Seguro_SQL`.`tem`;
-
 SELECT * FROM `Trabalho_Seguro_SQL`.`Incidentes`;
-
 SELECT * FROM `Trabalho_Seguro_SQL`.`Forum`;
-
 SELECT * FROM `Trabalho_Seguro_SQL`.`Registra`;
-
 SELECT * FROM `Trabalho_Seguro_SQL`.`afeta`;
 
 SELECT user FROM mysql. user;
-
